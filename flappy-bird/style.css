@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@font-face {
+  font-family: Teko;
+  src: url('https://fonts.googleapis.com/css2?family=Teko:700');
+}
+h1 {
+  font-family: Teko;
+}
+.canvas {
+  border: black solid 0.24rem;
+}
