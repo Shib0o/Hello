@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 420px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.title p {
+  font-weight: bold;
+}
+.game {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.player,
+.computer {
+  border: 3px solid black;
+  width: 20rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+}
+.playerScore,
+.computerScore {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  align-self: center;
+  padding-top: 0.4rem;
+  font-weight: bold;
+}
+.playerImage,
+.computerImage {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+}
+.options {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.options p {
+  font-weight: bold;
+  color: red;
+}
+.choose {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.choose .choose_rock {
+  background-image: url('rock_icon.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.choose .choose_paper {
+  background-image: url('paper_icon.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.choose .choose_scissors {
+  background-image: url('scissors_icon.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.choose_scissors:active,
+.choose_paper:active,
+.choose_rock:active {
+  transform: scale(0.85);
+  transition: transform 0.1s;
+}
