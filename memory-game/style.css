@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gameBox {
+  border: 0.3rem black solid;
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8rem;
+  justify-content: center;
+  width: 40rem;
+  height: 33rem;
+}
+.gameEng {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.startingImg {
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+.gameTil {
+  background-color: bisque;
+  border: 0.3rem black solid;
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+}
+.gameTil:active {
+  transform: scale(0.95);
+  transition: transform 0.2s;
+}
+.gameUse {
+  border: 0.3rem black solid;
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem;
+}
+.gameSta {
+  background-color: beige;
+  margin-top: 5rem;
+  font-size: 120%;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.gameSco {
+  display: flex;
+  flex-direction: row;
+  padding: 0.2rem;
+  padding-bottom: 1rem;
+  width: 90%;
+}
+.gameBut {
+  background-color: beige;
+  margin-top: 5rem;
+  font-size: 120%;
+  font-weight: 500;
+  text-align: right;
+  width: 10%;
+  height: 10%;
+  display: flex;
+}
+.statCou {
+  margin-left: 10px;
+}
+.buttonRes {
+  height: 20px;
+}
